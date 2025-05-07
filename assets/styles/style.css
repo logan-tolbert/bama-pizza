@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.background-section {
+    background-color: maroon;
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+
+nav {
+    text-align: center;
+    margin-top: 0.8em;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+a {
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+#menu,
+#order-form {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 1em 3em;
+    min-width: 400px;
+    max-width: 650px;
+    overflow-y: auto;
+    width: 70%;
+    background-color: whitesmoke;
+    line-height: 2rem;
+    max-height: 500px;
+    margin-bottom: 10em;
+
+}
+
+#menu {
+    margin-bottom: 10em;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.menu-item {
+    margin: 0 auto;
+    padding: 1.2em;
+    line-height: 2rem;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price {
+    font-weight: bolder;
+}
+
+fieldset {
+    padding: .4em;
+}
+
+img {
+    max-width: 250px;
+    width: 50%;
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+input[type="number"] {
+    padding: 0.2em;
+    margin-left: 0.2em;
+}
+
+#btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    margin: 1.5em;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: red;
+    color: white;
+}

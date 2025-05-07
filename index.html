@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kilgore Pizza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+</head>
+
+<body>
+    <div class="background-section"></div>
+    <header>
+        <nav>
+            <h1>🍕 BAMA Pizza Co. 🍕</h1>
+            <ul>
+                <li><a href="#order-form">Place Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <section id="menu-pizzas">
+                <h3>Pizzas</h3>
+                <article class="menu-item">
+
+                    <h4>Pepperoni Passion</h4>
+
+                    <figure>
+                        <img src="./assets/images/pepperoni.webp" alt="Pepperoni Pizza">
+                    </figure>
+
+                    <p>Classic pizza with zesty tomato sauce, heaps of premium pepperoni, and melted mozzarella cheese.
+                    </p>
+                    <p class="price">$12.99</p>
+                </article>
+                <article class="menu-item">
+
+                    <h4>Meat Lover's Feast</h4>
+
+                    <figure>
+                        <img src="./assets/images/meat-lovers.webp" alt="Meat Lover's Feast Pizza">
+                    </figure>
+
+                    <p>For the ultimate meat enthusiast! Packed with pepperoni, sausage, ground beef, and bacon, all
+                        smothered in mozzarella.</p>
+                    <p class="price">$15.99</p>
+                </article>
+                <article class="menu-item">
+                    <h4>Veggie Delight</h4>
+                    <figure>
+                        <img src="./assets/images/veggie.webp" alt="Veggie Delight Pizza">
+                    </figure>
+
+                    <p>A colorful and flavorful pizza loaded with fresh mushrooms, green peppers, onions, black olives,
+                        and
+                        mozzarella on a rich tomato base.</p>
+                    <p class="price">$13.99</p>
+                </article>
+            </section>
+            <section id="menu-sides">
+                <h3>Sides</h3>
+                <article class="menu-item">
+                    <h4>Garlic Knots</h4>
+                    <p>Freshly baked knots of dough brushed with garlic butter and sprinkled with Parmesan cheese.
+                        Served with marinara sauce.</p>
+                    <p class="price">$5.99</p>
+                </article>
+                <article class="menu-item">
+                    <h4>Fresh Side Salad</h4>
+                    <p>A crisp mix of lettuce, tomatoes, cucumbers, and carrots. Choice of dressing: Ranch, Italian, or
+                        Vinaigrette.</p>
+                    <p class="price">$6.50</p>
+                </article>
+                <article class="menu-item">
+                    <h4>Chicken Wings (8 pc)</h4>
+                    <p>Juicy chicken wings available in your choice of sauce: Buffalo, BBQ, or Plain.</p>
+                    <p class="price">$8.99</p>
+                </article>
+            </section>
+        </section>
+        <section id="order-form">
+            <h2>Place Your Order:</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Pizzas</legend>
+                    <div>
+                        <label for="pepperoni_passion">Pepperoni Passion:</label>
+                        <input type="number" id="pepperoni_passion" name="pepperoni_passion" min="0" max="50" value="0">
+                    </div>
+                    <div>
+                        <label for="meat_lovers_feast">Meat Lover's Feast:</label>
+                        <input type="number" id="meat_lovers_feast" name="meat_lovers_feast" min="0" max="50" value="0">
+                    </div>
+                    <div>
+                        <label for="veggie_delight">Veggie Delight:</label>
+                        <input type="number" id="veggie_delight" name="veggie_delight" min="0" max="50" value="0">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sides</legend>
+                    <div>
+                        <input type="checkbox" id="garlic_knots" name="sides" value="garlic_knots">
+                        <label for="garlic_knots">Garlic Knots (6 pc) (+ $3.99)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="side_salad" name="sides" value="side_salad">
+                        <label for="side_salad">Fresh Side Salad (+ $6.50)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="wings" name="sides" value="wings">
+                        <label for="wings">Chicken Wings (8 pc) (+ $8.99)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery / Pick-Up:</legend>
+                    <div>
+                        <input type="radio" id="delivery" name="dining_option" value="delivery">
+                        <label for="soda_coke">Delivery</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pick-up" name="dining_option" value="pick-up">
+                        <label for="pick-up">Pick-up</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                    <div>
+                        <label for="special_instructions">Any special requests for your order?</label>
+                        <br />
+                        <textarea id="special_instructions" name="special_instructions" rows="8" cols="40"></textarea>
+                    </div>
+                </fieldset>
+                <div id="btn-group">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made with 💖 by Logan Tolbert</p>
+    </footer>
+</body>
+
+</html>
